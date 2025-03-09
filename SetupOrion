@@ -2067,7 +2067,7 @@ telemetria() {
     ferramenta="$1"
     status="$2"
 
-    curl -X POST 'https://telemetria.oriondesign.art.br/api/telemetria' \
+    curl -X POST 'https://192.168.15.16:3000/api/telemetria' \
     -H "Content-Type: application/json" \
     -d '{
       "ip": "'"$ip"'",
